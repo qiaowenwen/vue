@@ -44,14 +44,13 @@ export default new Router({
               ]
             }
           ]
+        },
+        {
+          path: '/page02',
+          name: 'page02',
+          component: page02
         }
       ]
-    },
-
-    {
-      path: '/page02',
-      name: 'page02',
-      component: page02
     }
   ]
 })

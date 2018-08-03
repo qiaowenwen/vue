@@ -1,6 +1,16 @@
 <template>
-  <div>
-    hahaaa
+ <div >
+    <!-- <div class="home text-center">{{home}}</div> -->
+    <div >
+      <ul>
+        <li v-for="item in links">
+          <a @click="$goRoute(item.route)">{{item.text}}</a>
+        </li>
+      </ul>
+    </div>
+    <div >
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 

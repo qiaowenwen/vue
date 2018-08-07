@@ -15,9 +15,9 @@ export default {
   data () {
     return {
       flag: 0,
-      Hcolor: '#F6F6Fa',
-      Mcolor: '#F6F6Fa',
-      Lcolor: '#F6F6Fa',
+      Hcolor: '#9595a8',
+      Mcolor: '#9595a8',
+      Lcolor: '#9595a8',
       passWord: '',
       title: '这里是第一个页面',
       links: [
@@ -61,7 +61,7 @@ export default {
         this.checkStrong(value)
       }
       console.log(this.flag)
-      const OColor = '#f6f6fa'
+      const OColor = '#9595a8'
       const LColor = '#FF4B47'
       const MColor = '#F9AE35'
       const HColor = '#2DAF7D'
@@ -104,7 +104,7 @@ export default {
       display: inline-block;
       height: 5px;
       margin-right: 10px;
-      background: #f6f6fa;
+      background: #9595a8;
     }
   }
 }

@@ -27,6 +27,10 @@ export default {
         {
           text: '水蜜桃',
           route: '/page02'
+        },
+        {
+          text: '排序',
+          route: '/page03'
         }
       ]
     }

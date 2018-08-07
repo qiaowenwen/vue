@@ -3,6 +3,10 @@ import App from './App'
 import router from './router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import store from './store/'
+
+// css
+import './assets/style/style.css'
 
 Vue.config.productionTip = false
 
@@ -13,7 +17,7 @@ Vue.prototype.$goRoute = function (index) {
 Vue.use(ElementUI)
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
   router,
+  store,
   render: h => h(App)
-})
+}).$mount('#app')

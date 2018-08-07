@@ -10,6 +10,7 @@ const getter = {
 const mutations = {
   [types.CAN_YOU_NO_DATA] (state, data) {
     state.sorteDate = data
+    // debugger
     console.log(state.sorteDate)
   }
 }

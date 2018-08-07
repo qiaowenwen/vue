@@ -1,3 +1,3 @@
 <template>
-  <h3 class="text-center red">圆白菜不好吃</h3>
+  <h3 class="text-center red">222222</h3>
 </template>

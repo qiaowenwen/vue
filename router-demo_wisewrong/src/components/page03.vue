@@ -9,6 +9,7 @@
 <script>
 import { mapGetters } from 'vuex'
 import Util from '../common/commonFun'
+import * as types from '../store/types'
 export default {
   data () {
     return {
@@ -27,6 +28,11 @@ export default {
         }
       ]
     }
+  },
+  mounted () {
+    console.log(this)
+    console.log()
+    this.$store.commit(types.CAN_YOU_NO_DATA, '111')
   },
   computed: {
     ...mapGetters(['sorteDate'])

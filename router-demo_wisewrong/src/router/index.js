@@ -55,6 +55,13 @@ export default new Router({
           path: '/page03',
           name: 'page03',
           component: page03
+        },
+        {
+          path: '/ceshi',
+          component: resolve => {
+            require(['../view/ceshi'], resolve)
+          },
+          name: 'ceshi'
         }
       ]
     }

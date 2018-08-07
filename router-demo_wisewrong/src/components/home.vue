@@ -31,6 +31,10 @@ export default {
         {
           text: '排序',
           route: '/page03'
+        },
+        {
+          text: '测试',
+          route: '/ceshi'
         }
       ]
     }

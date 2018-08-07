@@ -4,8 +4,9 @@
   </div>
 </template>
 <script>
-import * as types from '../store/types'
-// import { mapGetters } from 'vuex'
+// import * as types from '../store/types'
+import { mapGetters } from 'vuex'
+import Util from '../common/commonFun'
 export default {
   data () {
     return {
@@ -26,10 +27,17 @@ export default {
     }
   },
   mounted () {
-    this.$store.commit(types.CAN_YOU_NO_DATA, 'aaaa')
+    let sortkey = 'value'
+    let reverse = 2
+    console.log(
+      Util.sortData(this.allSortDate, {
+        sortkey,
+        reverse
+      })
+    )
   },
   computed: {
-    // ...mapGetters(['allSortDate'])
+    ...mapGetters(['sorteDate'])
   }
 }
 </script>

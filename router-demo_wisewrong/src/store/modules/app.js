@@ -10,6 +10,7 @@ const getter = {
 const mutations = {
   [types.CAN_YOU_NO_DATA] (state, data) {
     state.sorteDate = data
+    console.log(state.sorteDate)
   }
 }
 export default {

@@ -1,10 +1,12 @@
 <template>
-  <div class="sortData">
-    <div v-for="item in allSortDate" :key="item.id">{{item.value}}</div>
+  <div>
+    <div class="sortData">
+      <div v-for="item in allSortDate" :key="item.id">{{item.value}}</div>
+    </div>
+    <el-button @click="sortDataFun()">排序</el-button>
   </div>
 </template>
 <script>
-// import * as types from '../store/types'
 import { mapGetters } from 'vuex'
 import Util from '../common/commonFun'
 export default {
@@ -26,18 +28,19 @@ export default {
       ]
     }
   },
-  mounted () {
-    let sortkey = 'value'
-    let reverse = 2
-    console.log(
-      Util.sortData(this.allSortDate, {
+  computed: {
+    ...mapGetters(['sorteDate'])
+  },
+  methods: {
+    sortDataFun () {
+      let sortkey = 'value'
+      let reverse = -1
+      let datas = Util.sortData(this.allSortDate, {
         sortkey,
         reverse
       })
-    )
-  },
-  computed: {
-    ...mapGetters(['sorteDate'])
+      this.allSortDate = datas
+    }
   }
 }
 </script>
